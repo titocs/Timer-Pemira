@@ -12,7 +12,7 @@ const firstButton = document.getElementById('tombol-1');
 const secButton = document.getElementById('tombol-2');
 
 // audio
-const beepSound = new Audio("src/audio/beep.mp3");
+const beepSound = new Audio("src/audio/timeUp.mp3");
 
 let timerLoop = null;
 let min = 0;
@@ -52,7 +52,7 @@ startButton.addEventListener('click', () => {
                 <div id="seconds" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">00</div>
             `;
         }
-        if(remainingTime >= 6000 && remainingTime <= 7000){
+        if(remainingTime >= 6000 && remainingTime <= 12000){
             beepSound.play();
         }
         if(remainingTime >= 1000 && remainingTime <= 2000){

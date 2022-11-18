@@ -52,14 +52,16 @@ startButton.addEventListener('click', () => {
                 <div id="seconds" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">00</div>
             `;
         }
-        if(remainingTime >= 6000 && remainingTime <= 7200){
+        if(remainingTime >= 6000 && remainingTime <= 7100){
             beepSound.play();
         }
         if(remainingTime >= 1000 && remainingTime <= 2000){
             startButton.disabled = false;
-            beepSound.pause();
-            beepSound.currentTime = 0;
         }
+//         if(remainingTime >= 0 && remainingTime <= 100){
+//             beepSound.pause();
+//             beepSound.currentTime = 0;
+//         }
     }
     
 });

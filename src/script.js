@@ -85,7 +85,6 @@ stopButton.addEventListener('click', () => {
 firstButton.addEventListener('click', () => {
     firstButton.classList.add('border-black');
     secButton.classList.remove('border-black');
-    thirdButton.classList.remove('border-black);
     min = 1;
     sec = 30;
     timerWrapper.innerHTML = `
@@ -98,7 +97,6 @@ firstButton.addEventListener('click', () => {
 secButton.addEventListener('click', () => {
     firstButton.classList.remove('border-black');
     secButton.classList.add('border-black');
-    thirdButton.classList.remove('border-black);
     min = 2;
     sec = 30;
     timerWrapper.innerHTML = `

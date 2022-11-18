@@ -57,8 +57,8 @@ startButton.addEventListener('click', () => {
         }
         if(remainingTime >= 1000 && remainingTime <= 2000){
             startButton.disabled = false;
-            sound.pause();
-            sound.currentTime = 0;
+            beepSound.pause();
+            beepSound.currentTime = 0;
         }
     }
     

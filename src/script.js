@@ -52,7 +52,7 @@ startButton.addEventListener('click', () => {
                 <div id="seconds" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">00</div>
             `;
         }
-        if(remainingTime >= 6000 && remainingTime <= 7100){
+        if(remainingTime >= 6000 && remainingTime <= 7000){
             beepSound.play();
         }
         if(remainingTime >= 1000 && remainingTime <= 2000){

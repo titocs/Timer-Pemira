@@ -10,6 +10,7 @@ const secondsEl = document.getElementById('seconds');
 // Button Timer
 const firstButton = document.getElementById('tombol-1');
 const secButton = document.getElementById('tombol-2');
+const thirdButton = document.getElementById('tombol-3');
 
 // audio
 const beepSound = new Audio("src/audio/beep.mp3");
@@ -85,6 +86,7 @@ stopButton.addEventListener('click', () => {
 firstButton.addEventListener('click', () => {
     firstButton.classList.add('border-black');
     secButton.classList.remove('border-black');
+    thirdButton.classList.remove('border-black);
     min = 1;
     sec = 30;
     timerWrapper.innerHTML = `
@@ -97,11 +99,25 @@ firstButton.addEventListener('click', () => {
 secButton.addEventListener('click', () => {
     firstButton.classList.remove('border-black');
     secButton.classList.add('border-black');
+    thirdButton.classList.remove('border-black);
     min = 2;
     sec = 30;
     timerWrapper.innerHTML = `
         <div id="minutes" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">02</div>
         <div class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">:</div>
         <div id="seconds" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">30</div>
+    `;
+});
+
+thirdButton.addEventListener('click', () => {
+    firstButton.classList.remove('border-black');
+    secButton.classList.remve('border-black');
+    thirdButton.classList.add('border-black);
+    min = 3;
+    sec = 0;
+    timerWrapper.innerHTML = `
+        <div id="minutes" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">03</div>
+        <div class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">:</div>
+        <div id="seconds" class="text-[30vw] font-semibold flex-grow" style="flex-grow: 1;">00</div>
     `;
 });

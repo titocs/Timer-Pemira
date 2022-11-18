@@ -42,7 +42,7 @@ startButton.addEventListener('click', () => {
             <div class="text-[30vw] font-semibold flex-grow" style='flex-grow: 1;'>:</div>
             <div id="seconds" class="text-[30vw] font-semibold flex-grow" style='flex-grow: 1;'>${secs}</div>
         `;
-        
+        console.log(remainingTime);
         if(remainingTime < 0){
             clearInterval(timerLoop);
             timerLoop = null;
